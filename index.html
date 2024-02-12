@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Maker</title>
+<link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <header>Card Maker</header>
+    <div id ="make">
+        <p id="your-card"><b>Your Card:</b></p>
+        <div id = "card"></div>
+    </div>
+    
+    <div id = "edits">
+        <div id="text">
+        <p id="text-write"><b>1. Enter text to write:</p></b>
+        <textarea id="textbox"  placeholder="Enter text" size="20"></textarea> 
+        <button id="clearButton" onclick="clear();">Clear Text</button>
+        </div>
+
+        <div id= "theme">
+            <p id="theme-word"><b>2. Choose a theme:</p></b>
+            <ul>
+                <li><div id = "hearts"></div></li>
+                <li><div id = "dogs"></div></li>
+                <li><div id = "clouds"></div></li>
+            </ul>
+        </div>
+
+        <div id="stickers">
+            <p id="emoji-word"><b>3. Choose an emoji sticker and click to place: </p></b>
+            <div class="emoji">
+                <ul class="emojis">
+                    <li>🍪</li>
+                    <li>🐶</li>
+                    <li>🐱</li>
+                    <li>💩</li>
+                    <li>😃</li>
+                </ul>
+                <button id="clearStickerButton" onclick="clearStickers();">Clear Stickers</button>
+            </div>
+        </div>
+        <div id="print">
+            <p id="printCardText"><b>4. Press to print</p></b>
+            <button id="printButton" onclick="PrintElem('card')">Print Card</button>
+        </div>
+        <script src="index.js"></script>
+    </div>
+
+
+</body>
+</html>
